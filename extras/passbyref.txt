@@ -1,0 +1,7 @@
+//2022 section B - (d)
+
+In C, when an array is passed as a parameter of a function
+
+----------
+
+The array name is the same as the address location of the first element, therefore it can ONLY be pass by reference

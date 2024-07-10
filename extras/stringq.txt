@@ -1,0 +1,24 @@
+In C, show how to initialise an appropriate array with the following strings:
+
+"Yesterday", "Today" and "Tomorrow"
+
+---------------------------------
+
+char yest[] = "Yesterday";
+char tod[] = "Today";
+char tom[] = "Tomorrow";
+
+__________________________________
+
+
+Show how to display the following string to standard output using a printf statement in C:
+
+"Don't forget that '\' is the escape character", he said.
+
+----------------------------------
+
+printf("\"Don't forget that '\\' is the escape character\", he said");
+
+__________________________________
+
+
