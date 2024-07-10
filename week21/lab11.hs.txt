@@ -1,0 +1,57 @@
+module Main where
+
+main :: IO ()
+main = do
+  a <- readLn
+  b <- readLn
+  putStrLn ("Max is " ++ show (myMax a b))
+  c <- readLn
+  d <- readLn
+  putStrLn ("Max is " ++ show (myMax c d))
+  e <- readLn
+  f <- readLn
+  putStrLn ("Min is " ++ show (myMin e f))
+  g <- readLn
+  h <- readLn
+  i <- readLn
+  putStrLn ("Max is " ++ show (maxThree g h i))
+  j <- readLn
+  k <- readLn
+  l <- readLn
+  putStrLn ("Max is " ++ show (maxThree j k l))
+  m <- readLn
+  n <- readLn
+  o <- readLn
+  putStrLn ("Min is " ++ show (minThree m n o))
+  p <- readLn
+  q <- readLn
+  putStrLn ("Pay is " ++ show (calcPay p q))
+  
+
+
+myMax :: Integer -> Integer -> Integer
+myMax x y = 
+  if x >= y then x
+  else y
+
+maxThree :: Integer -> Integer -> Integer -> Integer
+maxThree x y z = 
+  if x >= y && x >= z then x
+  else if y >= z then y
+  else z
+
+
+myMin :: Integer -> Integer -> Integer
+myMin x y = 
+  if x < y then x
+  else y
+
+minThree :: Integer -> Integer -> Integer -> Integer
+minThree x y z = 
+  if x < y && x < z then x
+  else if y < z then y
+  else z
+
+
+calcPay :: Float -> Float -> Float
+calcPay rate hours = rate * hours
