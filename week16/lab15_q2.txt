@@ -1,9 +1,0 @@
-Given the following array definition
-    char name[] = {'R', 'o', 'b', 'e', 'r', 't'}
-what is wrong with the following statements?
-
-(a) puts(name);
-(b) scanf("%s", &name); 
-(c) strcpy(name, "Philip");
-(d) *(name + 5) = "a";
-(e) name = "Philip";
