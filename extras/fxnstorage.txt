@@ -1,0 +1,10 @@
+//2022 section B - 4(a)
+
+Explain, with the aid of a small piece of code, each of the following storage types in C:
+- auto
+- static
+- extern
+- register
+
+-------------
+

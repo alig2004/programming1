@@ -1,0 +1,27 @@
+//2022 section A - 1(j)
+
+What is wrong with the following C code? Suggest a solution to correct the issue.
+
+int* fxn()
+{
+    int num = 5;
+    int *ptr;
+
+    ptr = &num;
+    return ptr;
+}
+
+------------------
+
+Should be:
+int* fxn()
+{
+    static int num = 5;
+    int *ptr;
+
+    ptr = &num;
+    return ptr;
+}
+
+The data of variable num will be wiped upon exiting the function as it is a local variables, the address will therefore be meaningless as nothing is in the address
+Setting num to a static variable will keep the variable in memory even once the function is exited

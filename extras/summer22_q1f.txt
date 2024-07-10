@@ -1,0 +1,24 @@
+Explain the following C code segment:
+int my_array[5] = {2, 4, 6, 8, 10};
+int *p;
+int i = 0;
+
+p = my_array;
+
+for (i=0; i<5; i++)
+{
+	printf("%d\n", *(p+i));
+}
+
+
+Solution:
+line 1: initalising a 5 element array
+line 2: creating a pointer called p
+line 3: initialising element i (index) to 0
+
+line 5: pointing p at the array my_array
+
+line 7: beginning a for loop, initialising i to 0, running it while i is less than 5 and adding 1 to i for each run
+line 8: opening curly bracket of the loop
+line 9: printing the contents of the array using the dereference operator 
+line 10: closing curly bracket of the loop

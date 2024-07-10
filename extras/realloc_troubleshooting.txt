@@ -1,0 +1,18 @@
+int *original_arr;
+int *realloc_ptr
+...
+ 
+realloc_ptr = realloc(original_ptr, new_size);
+ 
+if(realloc_ptr == NULL){
+    //access data using original_ptr
+}
+else{
+    original_ptr = realloc_ptr;
+    //operate normally
+}
+
+
+OR
+
+prevent the user from inputting a negative number greater than the initial memory block by saying if (extra_data < (numbers * -1)
